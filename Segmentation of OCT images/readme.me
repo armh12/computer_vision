@@ -1,1 +1,4 @@
+Source of Dataset: Kaggle - https://www.kaggle.com/datasets/paultimothymooney/chiu-2015
+I have used U-Net network for predicting masks, due it's simple to implement and it is very powerful tool for this kind of tasks.Data Preparation included extracting of images from MAT files to notebook by making them NumPy arrays.I have used normalization by dividing the arrays to 255(maximum possible value of RGB channel).I have checked for some corrupted images, which did not had a masks.Preprocessing included removing them from notebook.
+Model would perform well if we train it with higher count of epochs.I experemented for 200 epochs, there were few pixels appeared in predictions.This time, as you saw in notebook, I have used 10000 epochs, which was a big deal.It has been compiling for around 70 minutes, if you have time you can compile this model for higher quantity of epochs.The structure of model is simple U-Net model, which implementation is not big problem.
 
